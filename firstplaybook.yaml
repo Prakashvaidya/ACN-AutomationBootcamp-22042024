@@ -1,0 +1,18 @@
+---
+- name: firstplaybook
+  hosts: all
+
+  vars:
+    - one: "I like"
+    - best_food: "Spaghetti Carbonara"
+    - worst_drink: "Celery Juice"
+  tasks:
+    - name: debug module to add other part of message
+      ansible.builtin.debug:
+        msg: "{{ one }} the seaside"
+    - name: Second part
+      ansible.builtin.debug:
+        msg: "My favourite food is: {{ best_food }}"
+    -name: Third part
+      ansible.builtin.debug:
+    msg: "In {{best_food}}'s opinion {{ worst_drink }} is the worst drink"
