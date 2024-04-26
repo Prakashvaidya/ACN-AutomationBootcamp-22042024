@@ -13,6 +13,6 @@
     - name: Second part
       ansible.builtin.debug:
         msg: "My favourite food is: {{ best_food }}"
-    -name: Third part
+    - name: Third part
       ansible.builtin.debug:
     msg: "In {{best_food}}'s opinion {{ worst_drink }} is the worst drink"
