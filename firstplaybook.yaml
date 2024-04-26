@@ -15,4 +15,4 @@
         msg: "My favourite food is: {{ best_food }}"
     - name: Third part
       ansible.builtin.debug:
-    msg: "In {{best_food}}'s opinion {{ worst_drink }} is the worst drink"
+        msg: "In {{best_food}}'s opinion {{ worst_drink }} is the worst drink"
